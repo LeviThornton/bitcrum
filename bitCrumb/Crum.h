@@ -11,6 +11,6 @@
 
 @interface Crum : NSManagedObject
 
-@property (nonatomic, retain) NSString *crumText;
+@property (nonatomic, retain) NSString *text;
 
 @end

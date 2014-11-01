@@ -10,6 +10,6 @@
 
 @implementation Crum
 
-@dynamic crumText;
+@dynamic text;
 
 @end

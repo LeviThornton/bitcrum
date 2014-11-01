@@ -44,8 +44,8 @@
 }
 - (void) insertCrum {
     CoreDataStack *coreDataStack = [CoreDataStack defaultStack];
-    Crum *entry = [NSEntityDescription insertNewObjectForEntityForName:@"BitCrum" inManagedObjectContext:coreDataStack.managedObjectContext];
-    entry.crumText = (NSString *)self.crumTextField;
+    Crum *entry = [NSEntityDescription insertNewObjectForEntityForName:@"Entry" inManagedObjectContext:coreDataStack.managedObjectContext];
+    entry.text = (NSString *) self.crumTextField;
     [coreDataStack saveContext];
 }
 

@@ -48,8 +48,8 @@
 }
 
 - (NSFetchRequest *)entryListFetchRequest {
-    NSFetchRequest *fetchRequest = [NSFetchRequest fetchRequestWithEntityName:@"Crum"];
-    fetchRequest.sortDescriptors = @[[NSSortDescriptor sortDescriptorWithKey:@"crumText" ascending:NO]];
+    NSFetchRequest *fetchRequest = [NSFetchRequest fetchRequestWithEntityName:@"Entry"];
+    fetchRequest.sortDescriptors = @[[NSSortDescriptor sortDescriptorWithKey:@"text" ascending:NO]];
     
     return fetchRequest;
 }
@@ -63,7 +63,7 @@
     NSFetchRequest *fetchRequest = [self entryListFetchRequest];
     
     _fetchResultsController = [[NSFetchedResultsController alloc]
-                               initWithFetchRequest:fetchRequest managedObjectContext:coreDataStack.managedObjectContext sectionNameKeyPath:@"crumText" cacheName:nil];
+                               initWithFetchRequest:fetchRequest managedObjectContext:coreDataStack.managedObjectContext sectionNameKeyPath:@"text" cacheName:nil];
     _fetchResultsController.delegate = self;
     
     return _fetchResultsController;
@@ -79,7 +79,7 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
     Crum *entry = [self.fetchResultsController objectAtIndexPath:indexPath];
-    cell.textLabel.text = entry.crumText;
+    cell.textLabel.text = entry.text;
     
     return cell;
 }
