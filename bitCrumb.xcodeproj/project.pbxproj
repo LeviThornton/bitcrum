@@ -7,10 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AE5B3F3319ECDAAC0065FFE7 /* CrumViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE5B3F3219ECDAAC0065FFE7 /* CrumViewController.m */; };
+		AE5B3F3619ECDD680065FFE7 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE5B3F3519ECDD680065FFE7 /* TableViewController.m */; };
+		AE5B45FB19FC8A2D0030DCC6 /* Crum.m in Sources */ = {isa = PBXBuildFile; fileRef = AE5B45FA19FC8A2D0030DCC6 /* Crum.m */; };
+		AE5B45FE19FC8A900030DCC6 /* CoreDataStack.m in Sources */ = {isa = PBXBuildFile; fileRef = AE5B45FD19FC8A900030DCC6 /* CoreDataStack.m */; };
+		AE5B460119FC8C670030DCC6 /* AddCrumViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE5B460019FC8C670030DCC6 /* AddCrumViewController.m */; };
 		AE5B51A619ECA5A600D3046A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AE5B51A519ECA5A600D3046A /* main.m */; };
 		AE5B51A919ECA5A600D3046A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AE5B51A819ECA5A600D3046A /* AppDelegate.m */; };
 		AE5B51AC19ECA5A600D3046A /* bitCrumb.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AE5B51AA19ECA5A600D3046A /* bitCrumb.xcdatamodeld */; };
-		AE5B51AF19ECA5A600D3046A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE5B51AE19ECA5A600D3046A /* ViewController.m */; };
 		AE5B51B219ECA5A600D3046A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE5B51B019ECA5A600D3046A /* Main.storyboard */; };
 		AE5B51B419ECA5A600D3046A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE5B51B319ECA5A600D3046A /* Images.xcassets */; };
 		AE5B51B719ECA5A600D3046A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE5B51B519ECA5A600D3046A /* LaunchScreen.xib */; };
@@ -28,14 +32,22 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AE5B3F3119ECDAAC0065FFE7 /* CrumViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrumViewController.h; sourceTree = "<group>"; };
+		AE5B3F3219ECDAAC0065FFE7 /* CrumViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CrumViewController.m; sourceTree = "<group>"; };
+		AE5B3F3419ECDD680065FFE7 /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TableViewController.h; path = ../TableViewController.h; sourceTree = "<group>"; };
+		AE5B3F3519ECDD680065FFE7 /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TableViewController.m; path = ../TableViewController.m; sourceTree = "<group>"; };
+		AE5B45F919FC8A2D0030DCC6 /* Crum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Crum.h; sourceTree = "<group>"; };
+		AE5B45FA19FC8A2D0030DCC6 /* Crum.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Crum.m; sourceTree = "<group>"; };
+		AE5B45FC19FC8A900030DCC6 /* CoreDataStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataStack.h; sourceTree = "<group>"; };
+		AE5B45FD19FC8A900030DCC6 /* CoreDataStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataStack.m; sourceTree = "<group>"; };
+		AE5B45FF19FC8C670030DCC6 /* AddCrumViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddCrumViewController.h; sourceTree = "<group>"; };
+		AE5B460019FC8C670030DCC6 /* AddCrumViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddCrumViewController.m; sourceTree = "<group>"; };
 		AE5B51A019ECA5A600D3046A /* bitCrumb.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bitCrumb.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE5B51A419ECA5A600D3046A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AE5B51A519ECA5A600D3046A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		AE5B51A719ECA5A600D3046A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		AE5B51A819ECA5A600D3046A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		AE5B51AB19ECA5A600D3046A /* bitCrumb.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = bitCrumb.xcdatamodel; sourceTree = "<group>"; };
-		AE5B51AD19ECA5A600D3046A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		AE5B51AE19ECA5A600D3046A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		AE5B51B119ECA5A600D3046A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AE5B51B319ECA5A600D3046A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		AE5B51B619ECA5A600D3046A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -83,15 +95,23 @@
 		AE5B51A219ECA5A600D3046A /* bitCrumb */ = {
 			isa = PBXGroup;
 			children = (
+				AE5B45FC19FC8A900030DCC6 /* CoreDataStack.h */,
+				AE5B45FD19FC8A900030DCC6 /* CoreDataStack.m */,
 				AE5B51A719ECA5A600D3046A /* AppDelegate.h */,
 				AE5B51A819ECA5A600D3046A /* AppDelegate.m */,
-				AE5B51AD19ECA5A600D3046A /* ViewController.h */,
-				AE5B51AE19ECA5A600D3046A /* ViewController.m */,
+				AE5B3F3119ECDAAC0065FFE7 /* CrumViewController.h */,
+				AE5B3F3219ECDAAC0065FFE7 /* CrumViewController.m */,
+				AE5B45FF19FC8C670030DCC6 /* AddCrumViewController.h */,
+				AE5B460019FC8C670030DCC6 /* AddCrumViewController.m */,
+				AE5B3F3419ECDD680065FFE7 /* TableViewController.h */,
+				AE5B3F3519ECDD680065FFE7 /* TableViewController.m */,
 				AE5B51B019ECA5A600D3046A /* Main.storyboard */,
 				AE5B51B319ECA5A600D3046A /* Images.xcassets */,
 				AE5B51B519ECA5A600D3046A /* LaunchScreen.xib */,
 				AE5B51AA19ECA5A600D3046A /* bitCrumb.xcdatamodeld */,
 				AE5B51A319ECA5A600D3046A /* Supporting Files */,
+				AE5B45F919FC8A2D0030DCC6 /* Crum.h */,
+				AE5B45FA19FC8A2D0030DCC6 /* Crum.m */,
 			);
 			path = bitCrumb;
 			sourceTree = "<group>";
@@ -222,9 +242,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE5B45FB19FC8A2D0030DCC6 /* Crum.m in Sources */,
+				AE5B460119FC8C670030DCC6 /* AddCrumViewController.m in Sources */,
 				AE5B51A919ECA5A600D3046A /* AppDelegate.m in Sources */,
+				AE5B45FE19FC8A900030DCC6 /* CoreDataStack.m in Sources */,
 				AE5B51A619ECA5A600D3046A /* main.m in Sources */,
-				AE5B51AF19ECA5A600D3046A /* ViewController.m in Sources */,
+				AE5B3F3319ECDAAC0065FFE7 /* CrumViewController.m in Sources */,
+				AE5B3F3619ECDD680065FFE7 /* TableViewController.m in Sources */,
 				AE5B51AC19ECA5A600D3046A /* bitCrumb.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -416,6 +440,7 @@
 				AE5B51C819ECA5A600D3046A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AE5B51C919ECA5A600D3046A /* Build configuration list for PBXNativeTarget "bitCrumbTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +449,7 @@
 				AE5B51CB19ECA5A600D3046A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
