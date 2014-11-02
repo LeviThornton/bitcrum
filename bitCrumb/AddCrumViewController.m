@@ -30,22 +30,21 @@
 
 - (BOOL) textFieldShouldReturn:(UITextField *)textField {
     
-    NSLog(@"TextFieldShouldReturn: %@",textField);
-
     // remove keyboard, save any text and reset input field
     [self.crumTextField resignFirstResponder];
-    self.crumTextField.text = nil;
-    
-    if(self.crumTextField.text.length>3) {
-        NSLog(@"TextFieldShouldReturn insertCrum: %@", textField);
+
+    NSLog(@"TextFieldShouldReturn insertCrum: %@", self.crumTextField.text);
+
+    if(self.crumTextField.text.length>0) {
         [self insertCrum];
+        self.crumTextField.text = nil;
     }
     return YES;
 }
 - (void) insertCrum {
     CoreDataStack *coreDataStack = [CoreDataStack defaultStack];
     Crum *entry = [NSEntityDescription insertNewObjectForEntityForName:@"Entry" inManagedObjectContext:coreDataStack.managedObjectContext];
-    entry.text = (NSString *) self.crumTextField;
+    entry.text = self.crumTextField.text;
     [coreDataStack saveContext];
 }
 

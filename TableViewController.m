@@ -20,7 +20,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    //[self.fetchResultsController performFetch:nil];
+    [self.fetchResultsController performFetch:nil];
     // Do any additional setup after loading the view.
 }
 
@@ -42,10 +42,10 @@
     return [sectionInfo numberOfObjects];
 }
 
-- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
-    id <NSFetchedResultsSectionInfo> sectionInfo = [self.fetchResultsController sections][section];
-    return [sectionInfo name];
-}
+//- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
+//    id <NSFetchedResultsSectionInfo> sectionInfo = [self.fetchResultsController sections][section];
+//    return [sectionInfo name];
+//}
 
 - (NSFetchRequest *)entryListFetchRequest {
     NSFetchRequest *fetchRequest = [NSFetchRequest fetchRequestWithEntityName:@"Entry"];

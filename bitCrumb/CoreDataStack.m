@@ -29,7 +29,7 @@
     // The directory the application uses to store the Core Data store file. This code uses a directory named "com.lt.Diary" in the application's documents directory.
     NSURL *data = [[[NSFileManager defaultManager] URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask] lastObject];
     
-    NSLog(@"%@",data);
+    //NSLog(@"%@",data);
     
     return data;
 }
@@ -43,7 +43,8 @@
     NSURL *modelURL = [[NSBundle mainBundle] URLForResource:@"bitCrumb" withExtension:@"momd"];
     _managedObjectModel = [[NSManagedObjectModel alloc] initWithContentsOfURL:modelURL];
     
-    NSLog(@"%@", modelURL);
+    //NSLog(@"%@", modelURL);
+    
     return _managedObjectModel;
 }
 

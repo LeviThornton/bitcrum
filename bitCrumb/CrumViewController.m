@@ -30,7 +30,7 @@
 
 - (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    NSLog(@"prepareForSegue: %@",sender);
+    //NSLog(@"prepareForSegue: %@",sender);
     
     NSString * segueName = segue.identifier;
     
