@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="sF9-1o-bdq">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="sF9-1o-bdq">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
         <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
@@ -18,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="klt-QN-54L" userLabel="TextField Container View">
+                            <containerView hidden="YES" opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="klt-QN-54L" userLabel="TextField Container View">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="wHI-IF-Fv2"/>
@@ -91,6 +91,24 @@
             </objects>
             <point key="canvasLocation" x="2892" y="242.25"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="gfE-YJ-WoT">
+            <objects>
+                <viewController id="m1l-a3-9p0" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="GnO-q5-6k6"/>
+                        <viewControllerLayoutGuide type="bottom" id="NJ2-Dj-stA"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Nlz-D7-BZD">
+                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="T9j-WK-X0B" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4410" y="233.25"/>
+        </scene>
         <!--Table View Controller-->
         <scene sceneID="OLv-2Y-Q8s">
             <objects>
@@ -105,17 +123,20 @@
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="hKk-qP-he1" id="BHT-P6-BIx">
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="m1l-a3-9p0" kind="show" id="h8M-kD-2ZT"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
-                            <outlet property="dataSource" destination="ohY-48-bLP" id="Va6-7E-joF"/>
-                            <outlet property="delegate" destination="ohY-48-bLP" id="Fes-sh-OJc"/>
+                            <outlet property="dataSource" destination="ohY-48-bLP" id="bJH-lS-zXm"/>
+                            <outlet property="delegate" destination="ohY-48-bLP" id="AL6-A8-p2b"/>
                         </connections>
                     </tableView>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HXl-Jq-fw8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3403" y="444"/>
+            <point key="canvasLocation" x="3654" y="363"/>
         </scene>
         <!--Add Crum View Controller-->
         <scene sceneID="Ach-EF-Jgl">
@@ -136,7 +157,7 @@
                                 <textInputTraits key="textInputTraits" returnKeyType="done"/>
                             </textField>
                         </subviews>
-                        <color key="backgroundColor" red="0.90196079015731812" green="0.90196079015731812" blue="0.90196079015731812" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.40000000596046448" green="0.80000001192092896" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="pb8-xZ-SxM" firstAttribute="top" secondItem="5UH-OQ-AKu" secondAttribute="bottom" constant="4" id="Jcb-jq-a5J"/>
                             <constraint firstItem="5UH-OQ-AKu" firstAttribute="top" secondItem="auX-kH-ZjJ" secondAttribute="bottom" constant="4" id="Jlw-ae-PzX"/>
@@ -173,7 +194,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eSN-9b-8Lk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3391" y="6"/>
+            <point key="canvasLocation" x="3654" y="-9.375"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="yae-p3-ASO">

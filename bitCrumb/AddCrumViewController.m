@@ -33,8 +33,6 @@
     // remove keyboard, save any text and reset input field
     [self.crumTextField resignFirstResponder];
 
-    NSLog(@"TextFieldShouldReturn insertCrum: %@", self.crumTextField.text);
-
     if(self.crumTextField.text.length>0) {
         [self insertCrum];
         self.crumTextField.text = nil;
@@ -45,6 +43,7 @@
     CoreDataStack *coreDataStack = [CoreDataStack defaultStack];
     Crum *entry = [NSEntityDescription insertNewObjectForEntityForName:@"Entry" inManagedObjectContext:coreDataStack.managedObjectContext];
     entry.text = self.crumTextField.text;
+    //entry.date
     [coreDataStack saveContext];
 }
 
